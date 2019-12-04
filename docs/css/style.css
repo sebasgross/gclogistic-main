@@ -46342,11 +46342,14 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 #gclogistics {
 	font-size: 200%;
+	letter-spacing: 2px;
 }
 
 #about {
-	font-size: 92% ;
+	/* font-size: 95% ; */
 	line-height: 3vh;
+	text-align: justify;
+	line-height: 1.2;
 
 }
 #left-heading {
