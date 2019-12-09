@@ -107,7 +107,7 @@ body {
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 1.6;
-	color: rgba(0, 0, 0, 0.8);
+	color: rgba(68, 68, 68, 0.8);
 	text-align: left;
 	background-color: #000;
 }
@@ -38834,6 +38834,7 @@ html .wrapper {
 	position: relative;
 }
 
+
 .swiper-slide:after {
 	content: "";
 	position: absolute;
@@ -38841,7 +38842,8 @@ html .wrapper {
 	right: 0;
 	bottom: 0;
 	top: 0;
-	background: rgba(0, 0, 0, 0.2);
+	background:rgba(199, 199, 199, 0.1);
+	/* background: rgba(0, 0, 0, 0.1); */
 	transition: 1.2s;
 	transition-delay: 0.6s;
 	z-index: 1;
@@ -46441,3 +46443,4 @@ ol{
 	font-weight: bold;
 	text-align: left;
 }
+
