@@ -11651,7 +11651,7 @@ fieldset[disabled] .btn-link:focus {
 .pagination-classic > li > a.btn-aqil-effect span:after,
 .pagination-classic > li > span.btn-aqil-effect span:after {
 	content: '';
-	background: rgba(68, 68, 68, 0.5);
+	background: rgba(204, 65, 65, 0.5);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -38313,7 +38313,7 @@ html .wrapper {
 }
 
 .rd-navbar-floated.rd-navbar-dark .rd-navbar-inner {
-	background: #000;
+	background: rgb(202, 202, 202);
 }
 
 .rd-navbar-floated.rd-navbar-dark.rd-navbar-static .rd-navbar-search-form-control, .rd-navbar-floated.rd-navbar-dark.rd-navbar-static .rd-navbar-search-toggle, .rd-navbar-floated.rd-navbar-dark.rd-navbar-static .rd-navbar-cart {
@@ -46345,6 +46345,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 #gclogistics {
 	font-size: 200%;
 	letter-spacing: 2px;
+	font-family: 'Merriweather', serif;
 }
 
 #about {
@@ -46449,7 +46450,19 @@ ol{
 } */
 
 #background-picture{
-	margin-left: 30vw;
-	margin-top: 15vh;
-	/* padding-left: 10vw;  */
+	margin-left: 60vw;
+	margin-top: 13vh;
+
 }
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&display=swap');
+
+@media (min-width: 300px) and (max-width: 1024px) {
+	#about {
+		text-align: center;
+		height: 5vh;
+		font-family: 'Merriweather', serif;
+		display: none;
+		  
+	}
+	  
+	}
