@@ -46345,14 +46345,15 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 #gclogistics {
 	font-size: 200%;
 	letter-spacing: 2px;
-	font-family: 'Merriweather', serif;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #about {
 	/* font-size: 95% ; */
-	line-height: 3vh;
+	/* line-height: 3vh;	 */
 	text-align: justify;
-	line-height: 1.2;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin-bottom: 4vh;
 
 }
 #left-heading {
@@ -46466,3 +46467,13 @@ ol{
 	}
 	  
 	}
+
+
+
+.color{
+	padding-top: 1.5vh;
+}
+
+.color:hover{
+	color: #0E56C2;
+}
