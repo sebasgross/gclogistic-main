@@ -13,6 +13,22 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CPoppins:300,400,400i,500,700,800i,900%7CYesteryear" />
     <link rel="stylesheet" href="css/style.css" />
     <!--[if lt IE 10]><div style='background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;'><a href='http://windows.microsoft.com/en-US/internet-explorer/'><img src='images/ie8-panel/warning_bar_0000_us.jpg' border='0' height='42' width='820' alt='You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.'></a></div><script src='js/html5shiv.min.js'></script><![endif]-->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_58pnwh6LdfS9RaroXsHTr");
+       })();
+    </script>
+ <script type="text/javascript">
+  window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          // generate the contact number value
+          this.contact_number.value = Math.random() * 100000 | 0;
+          emailjs.sendForm('contact_service', 'contact_template', this);
+      });
+  }
+</script> -->
   </head>
 
   <body>
@@ -689,24 +705,50 @@
               <h5>contact us now</h5>
               <p>Feel free to get in touch with us if you want to find out any necessary information or ask questions about our sale.</p>
             </div>
+
             <div class="row justify-content-center">
               <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
-                <form class="rd-mailform form-modern text-center form-center" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                <form id="contact-form" class="rd-mailform form-modern text-center form-center" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
                   <div class="row">
+                    
                     <div class="col-12">
-                      <div class="form-group"><label class="form-label" for="contact-me-name">Name:</label> <input class="form-control" id="contact-me-name" type="text" name="name" data-constraints="@Required" /></div>
+                      <div class="form-group"><label class="form-label" for="contact-me-name">
+                        <input type="hidden" name="contact_number" />
+                        Name:</label> <input class="form-control" id="contact-me-name" type="text" name="user_name" data-constraints="@Required" />
+                      </div>
                     </div>
                     <div class="col-12 offset-top-20">
-                      <div class="form-group"><label class="form-label" for="contact-me-email">E-Mail:</label> <input class="form-control" id="contact-me-email" type="email" name="email" data-constraints="@Required @Email" /></div>
+                      <div class="form-group"><label class="form-label" for="contact-me-email">E-Mail:</label> <input class="form-control" id="contact-me-email" type="email" name="user_email" data-constraints="@Required @Email" /></div>
                     </div>
                     <div class="col-xl-12 offset-top-20">
                       <div class="form-group"><label class="form-label" for="contact-me-message">Message:</label> <textarea class="form-control" id="contact-me-message" name="message" data-constraints="@Required"></textarea></div>
                     </div>
                   </div>
-                  <div class="text-center offset-top-30"><button class="btn btn-primary" type="submit">send message</button></div>
+                  <div class="text-center offset-top-30"><button class="btn btn-primary" type="submit" value="Send">Send Message</button></div>
                 </form>
               </div>
             </div>
+
+     
+<!-- ESTE ES EL QUE TAL -->
+            <!-- <form
+              action="https://formspree.io/mzbdzrpr"
+              method="POST"
+            >
+              <label>
+                Your email:
+                <input type="text" name="_replyto">
+              </label>
+              <label>
+                Your message:
+                <textarea name="message"></textarea>
+              </label>
+
+              your other form fields go here
+
+              <button type="submit">Send</button>
+            </form> -->
+<!-- Hasta aca -->
           </div>
         </section>
       </section>
