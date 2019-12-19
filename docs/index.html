@@ -13,22 +13,6 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CPoppins:300,400,400i,500,700,800i,900%7CYesteryear" />
     <link rel="stylesheet" href="css/style.css" />
     <!--[if lt IE 10]><div style='background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;'><a href='http://windows.microsoft.com/en-US/internet-explorer/'><img src='images/ie8-panel/warning_bar_0000_us.jpg' border='0' height='42' width='820' alt='You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.'></a></div><script src='js/html5shiv.min.js'></script><![endif]-->
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init("user_58pnwh6LdfS9RaroXsHTr");
-       })();
-    </script>
- <script type="text/javascript">
-  window.onload = function() {
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-          event.preventDefault();
-          // generate the contact number value
-          this.contact_number.value = Math.random() * 100000 | 0;
-          emailjs.sendForm('contact_service', 'contact_template', this);
-      });
-  }
-</script> -->
   </head>
 
   <body>
@@ -706,7 +690,7 @@
               <p>Feel free to get in touch with us if you want to find out any necessary information or ask questions about our sale.</p>
             </div>
 
-            <div class="row justify-content-center">
+            <!-- <div class="row justify-content-center">
               <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5">
                 <form id="contact-form" class="rd-mailform form-modern text-center form-center" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
                   <div class="row">
@@ -727,27 +711,28 @@
                   <div class="text-center offset-top-30"><button class="btn btn-primary" type="submit" value="Send">Send Message</button></div>
                 </form>
               </div>
-            </div>
+            </div> -->
 
      
 <!-- ESTE ES EL QUE TAL -->
-            <!-- <form
+<div class="contact-us-form">
+            <form
               action="https://formspree.io/mzbdzrpr"
               method="POST"
             >
-              <label>
-                Your email:
-                <input type="text" name="_replyto">
+              <label class="inputs">
+                
+                <input type="text" placeholder="Email" name="_replyto">
               </label>
               <label>
-                Your message:
-                <textarea name="message"></textarea>
+             
+                <textarea class="inputs" placeholder="Write your message here!" name="message"></textarea>
               </label>
-
-              your other form fields go here
-
-              <button type="submit">Send</button>
-            </form> -->
+              <div class="inputs">
+              <div style="margin-left:10vw;"class="text-center offset-top-30"><button class="btn btn-primary" type="submit" value="Send">Send Message</button></div>
+            </div>
+            </form>
+</div>
 <!-- Hasta aca -->
           </div>
         </section>
